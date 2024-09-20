@@ -7,4 +7,5 @@ Unit tests can be diabled by deleting UNIT_TEST define from Lib.h file
 The structure of project in Windows is next:
 
 \ClientServerApp - folder contain code and another files required for Visual Studio
+
 \boost_1_83_0 - folder contain boost
