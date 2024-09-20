@@ -1,0 +1,27 @@
+all: program
+
+program: Logger.o XMLFile.o TestClass.o ClientServerApp.o User.o Socket.o
+	g++ -m32 Logger.o XMLFile.o TestClass.o ClientServerApp.o Socket.o User.o -o ClientServerApp
+
+Logger.o: Logger.cpp
+	g++ -m32 -c -g Logger.cpp
+
+XMLFile.o: XMLFile.cpp
+	g++ -m32 -c -g XMLFile.cpp
+
+TestClass.o: TestClass.cpp
+	g++ -m32 -c -g TestClass.cpp
+
+ClientServerApp.o: ClientServerApp.cpp
+	g++ -m32 -c -g ClientServerApp.cpp
+
+Socket.o: Socket.cpp
+	g++ -m32 -c -g Socket.cpp
+
+User.o: User.cpp
+	g++ -m32 -c -g User.cpp
+
+clean:
+	rm -rf *.o program
+
+recompile: clean all
