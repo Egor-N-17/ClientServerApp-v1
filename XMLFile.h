@@ -4,13 +4,9 @@
 #include <fstream>
 #include <sstream>
 #include <boost/property_tree/xml_parser.hpp>
-#ifdef _WIN32
-#include "..\Headers.h"
-#include "..\Lib.h"
-#else
+
 #include "Headers.h"
 #include "Lib.h"
-#endif
 
 using namespace std;
 using namespace boost;

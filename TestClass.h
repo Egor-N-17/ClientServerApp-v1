@@ -1,11 +1,7 @@
 #pragma once
 #include <sstream>
 #include <iostream>
-#ifdef _WIN32
-#include "..\Lib.h"
-#else
 #include "Lib.h"
-#endif
 
 using namespace std;
 

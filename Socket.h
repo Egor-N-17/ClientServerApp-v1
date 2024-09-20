@@ -1,8 +1,4 @@
-#ifdef _WIN32
-#include "..\Headers.h"
-#else
 #include "Headers.h"
-#endif
 
 using namespace std;
 

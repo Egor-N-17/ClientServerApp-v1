@@ -1,9 +1,5 @@
 #pragma once
-#ifdef _WIN32
-#include "..\Headers.h"
-#else
 #include "Headers.h"
-#endif
 #include <fstream>
 
 using namespace std;
